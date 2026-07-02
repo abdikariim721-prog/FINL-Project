@@ -388,28 +388,43 @@ margin-top: 48px;
 @media (max-width:480px){
 
 .main-header{
-    padding:10px;
+    padding:7px;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:auto;
+    z-index:9999;
+
 }
 
 .logo{
     font-size:28px;
     text-align:center;
 }
+.navbar{
+    width:100%;
+}
 
 .navbar ul{
-    flex-direction:column;
-    align-items:center;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    gap:2px;
+    padding:0;
+    margin:0;
     width:100%;
 }
 
 .navbar ul li{
-    width:100%;
+    width:auto;
+    margin: 0;
 }
 
 .navbar ul li a{
-    width:100%;
-    text-align:center;
-    padding:14px;
+    display:inline-block;
+    font-size:0.8rem;
+
     .image-grid {
         grid-template-columns: 1fr;
     }
